@@ -17,7 +17,7 @@ module.exports = {
     ],
     loaders: [
       { test: /\.html$/, loader: "file?name=[name].[ext]" },
-      { test: /\.css$/, loader: "file?name=[name].[ext]" },
+      { test: /\.css$/, loader: "style-loader!css-loader" },
       { test: /\.jsx?$/, exclude: /node_modules/, loaders: ["react-hot","babel-loader"]},
     ],
   },

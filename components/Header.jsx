@@ -1,7 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-
-const defaultStyle = {
-};
+import "./header.css";
 
 class MainSection extends Component {
   constructor(props, context) {
@@ -11,8 +9,9 @@ class MainSection extends Component {
 
   render() {
     return (
-      <section className="main" style={defaultStyle}>
-          
+      <section>
+          <div className="left"> AJ </div>
+          <div className="right"> </div>​
       </section>
     );
   }
